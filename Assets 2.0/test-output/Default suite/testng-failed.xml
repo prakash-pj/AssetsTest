@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
+  <test name="Default test(failed)">
+    <classes>
+      <class name="com.issquared.TestCases.ASSETS_Testcase">
+        <methods>
+          <include name="testAssetpool"/>
+          <include name="testOnboardRequests"/>
+          <include name="testWarrantyContract"/>
+          <include name="testACTIONS_dispose"/>
+          <include name="login"/>
+          <include name="testItemClass"/>
+          <include name="testWarehouse"/>
+          <include name="testACTIONS_onboard"/>
+          <include name="testACTIONS_release"/>
+          <include name="testLIFECYCLE_hold"/>
+          <include name="queryParameterization"/>
+          <include name="testItemType"/>
+          <include name="testACTIONS_hold"/>
+          <include name="testWorkflow"/>
+          <include name="testLIFECYCLE_Repair"/>
+          <include name="testInsuranceContract"/>
+          <include name="testItemTypesAttributes"/>
+          <include name="testSKUItems"/>
+          <include name="testACTIONS_repair"/>
+          <include name="testACTIONS_transfer"/>
+          <include name="testLIFECYCLE_dispose"/>
+          <include name="testItemSubType"/>
+          <include name="testRequestedAssets"/>
+          <include name="testLIFECYCLE_Assign"/>
+          <include name="testPurchaseOrder"/>
+          <include name="testRecertification"/>
+          <include name="testMaintenanceContract"/>
+        </methods>
+      </class> <!-- com.issquared.TestCases.ASSETS_Testcase -->
+    </classes>
+  </test> <!-- Default test(failed) -->
+</suite> <!-- Failed suite [Default suite] -->

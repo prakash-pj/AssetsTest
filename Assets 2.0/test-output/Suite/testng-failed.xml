@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [Suite]" parallel="tests">
+  <parameter name="browser" value="chrome"/>
+  <parameter name="url" value="file:///D:/Firefox%20Downloads/test-assets.html"/>
+  <test name="Test(failed)" parallel="tests">
+    <parameter name="browser" value="chrome"/>
+    <parameter name="url" value="file:///D:/Firefox%20Downloads/test-assets.html"/>
+    <classes>
+      <class name="com.issquared.TestCases.ASSETS_Testcase">
+        <methods>
+          <include name="queryParameterization"/>
+          <include name="writeexcels"/>
+          <include name="login"/>
+          <include name="complete"/>
+          <include name="testCustomers"/>
+        </methods>
+      </class> <!-- com.issquared.TestCases.ASSETS_Testcase -->
+    </classes>
+  </test> <!-- Test(failed) -->
+</suite> <!-- Failed suite [Suite] -->

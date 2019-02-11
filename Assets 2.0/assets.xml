@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Suite" parallel="tests">
+
+<listeners>
+<listener class-name="com.issquared.Common.MyTransformer"/>
+</listeners>
+
+	<test name="Test"   group-by-instances="false">
+		<parameter name="browser" value="chrome"></parameter>
+		<parameter name="url" value="file:///D:/Firefox%20Downloads/test-assets.html"></parameter>
+		
+		          <classes> 
+		          
+		              <class name="com.issquared.TestCases.ASSETS_Testcase"> 
+		              
+	                        <methods>
+	                        
+	                            <include name="testAssignUserToManagerRole"></include>
+	                        
+	                            <include name="testInventory"></include>
+	                            <include name="testCustomers"></include>
+	                            
+	                            <include name="testWarehouse"></include>
+		                        <include name="testAssetpool"></include> 
+		                        
+	                            <include name="testItemClass"></include>
+	                            <include name="testItemType"></include>
+	                            <include name="testItemSubType"></include>
+	                            <include name="testSKUItems"></include> 
+	                            
+		                        <include name="testPurchaseOrder"></include>
+		                        
+		                         <include name="testEmailTemplates"></include>
+		                        
+		                        <include name="testWorkflow"></include>
+		                        <include name="testRecertification"></include> 
+		                        
+		                        <include name="testAssetBundles"></include>
+		                        
+		                        <include name="testMaintenanceContract"></include>
+		                        <include name="testInsuranceContract"></include>
+	                            <include name="testWarrantyContract"></include> 
+	                            
+	                            <include name="testLIFECYCLE_Assign"></include> 
+	                            <include name="testLIFECYCLE_Repair"></include>
+	                            <include name="testLIFECYCLE_hold"></include>
+	                            
+		                      <!--   <include name="testLIFECYCLE_dispose"></include>  -->
+		                        
+		                        <include name="testACTIONS_onboard"></include> 
+		                        <include name="testACTIONS_transfer"></include>
+		                        <include name="testACTIONS_hold"></include>
+		                        <include name="testACTIONS_repair"></include>
+	                            <include name="testACTIONS_dispose"></include>
+		                        <include name="testACTIONS_release"></include> 
+		                        
+		                       <!--  <include name="testRequestedAssets"></include>
+		                        <include name="testOnboardRequests"></include>
+		                        <include name="testTransferRequests"></include> --> 
+		                        
+		                         
+		                        
+				            </methods> 
+	                  </class>
+	                  
+		      <!-- </test> Test
+		   <test name="Test2">
+		<parameter name="browser" value="ff"></parameter>
+		<parameter name="url"
+			value="file:///D:/Firefox%20Downloads/test-zion.html"></parameter>
+		<classes>
+			<class name="Testcases.LoginPageTestcase">
+				
+			</class>
+			 -->
+		</classes>
+	</test> <!-- Test -->
+</suite> <!-- Suite -->
