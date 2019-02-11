@@ -69,6 +69,12 @@ public static void mouseOver(WebElement element){
 	action.moveToElement(element).perform();
 }
 
+public static void mouseOver2(WebElement element){
+	Actions action = new Actions(driver);
+	action.moveToElement(element).perform();
+}
+
+
 public static void wait(WebElement element1){
 	
    	driver.manage().timeouts().implicitlyWait(100, TimeUnit.SECONDS);					
